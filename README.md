@@ -7,7 +7,8 @@ These are guidelines I follow for clean, readable and performant javascript.
 
 + Lint/hint your source code.
 + Minify your source code before pushing to production.
-+ Use sourcemaps with your minified files to ease development.
++ Keep your source code and your minified development/production code separated.
++ Use sourcemaps with your minified dev/production files to ease development.
 
 ## You should not:
 
