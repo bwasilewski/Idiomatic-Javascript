@@ -16,4 +16,8 @@ These are guidelines I follow for clean, readable and performant javascript.
 
 Why? Because shorthand code is not easily legible. It sacrifices readability to save a few bits but since you're minifying your source code, you don't need to worry about saving any bits!
 
++ Put all logic into one single file.
 
+Why? Because that file is going to get difficult to maintain very quickly. Also, it's most likely that every page of your site or app doesn't need or use every single line of your js file. 
+
+Instead, keep all site-wide functionality (navigation logic, for instance) in a single file. All other logic (page or module-specific) belongs in a separate, namespaced file (home.page.js, slideshow.module.js) to be dynamically loaded by your main file.
